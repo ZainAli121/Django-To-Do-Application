@@ -1,8 +1,16 @@
-<p>Are you sure you want to delete "{{task}}"?</p>
+{% extends 'main.html' %}
 
-<a href="{% url 'index' %}">Cancel</a>
-
-<form method="post" action="">
-    {% csrf_token %}
-    <input type="submit" name="Confirm">
-</form>
+{% block content %}
+    <title>Delete Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <div class="container mt-4">
+        <p>Are you sure you want to delete "{{ task }}"?</p>
+        
+        <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+        
+        <form method="post" action="">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Confirm</button>
+        </form>
+    </div>
+{% endblock %}
