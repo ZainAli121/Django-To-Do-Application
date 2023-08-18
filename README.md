@@ -21,7 +21,7 @@ Django To-Do List Application is a simple yet powerful application built using t
 # Technologies Used
 + Django
 + SQLite
-+ Boostrap
++ Bootstrap
 + HTML
 + Little bit of CSS
 
