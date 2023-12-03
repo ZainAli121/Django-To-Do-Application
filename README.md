@@ -38,12 +38,6 @@ Django To-Do List Application is a simple yet powerful application built using t
 
    cd todo
 
-3. Create the database and apply migrations:
-
-   ```markdown
-
-   python manage.py makemigrations
-   python manage.py migrate
 
 4. For accessing admin site, create super user for it:
 
@@ -66,6 +60,3 @@ Django To-Do List Application is a simple yet powerful application built using t
 
 # Contributors
 + Zain Ali
-
-# License
-This project is licensed under the MIT License. 
